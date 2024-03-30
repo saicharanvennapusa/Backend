@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
+
 const userSchema = new Schema({
     username: {
         type: String,
@@ -15,6 +16,20 @@ const userSchema = new Schema({
         unique: true,
         lowercase: true,
         trim: true
+    },
+    fullName: {
+        type: String,
+        required: true,
+        lowercase: true,
+        trim: true,
+        index: true
+    },
+    lastName: {
+        type: String,
+        required: true,
+        lowercase: true,
+        trim: true,
+        index: true
     },
     password: {
         type: String,

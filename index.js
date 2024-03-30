@@ -1,13 +1,15 @@
 import express from 'express'
 import dotenv from "dotenv"
 import connectDB from './src/db/index.js'
-const app = express()
-const port = 3000
+import { app } from "./app.js"
+
+dotenv.config({
+    path: './.env'
+})
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
-
 
 
 
