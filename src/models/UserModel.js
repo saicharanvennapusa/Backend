@@ -17,16 +17,14 @@ const userSchema = new Schema({
         lowercase: true,
         trim: true
     },
-    fullName: {
+    firstName: {
         type: String,
-        required: true,
         lowercase: true,
         trim: true,
         index: true
     },
     lastName: {
         type: String,
-        required: true,
         lowercase: true,
         trim: true,
         index: true

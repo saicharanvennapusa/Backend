@@ -4,7 +4,7 @@ const connectDB = async () => {
 
     try {
         const connectionInstance =
-            await mongoose.connect("mongodb+srv://vennapusasaicharanreddy:Charann2@cluster0.fe2jmrp.mongodb.net/videotube")
+            await mongoose.connect("mongodb+srv://vennapusasaicharanreddy:Charann2@cluster0.fe2jmrp.mongodb.net/Backend")
         console.log(`\n MongoDB connected !! DB HOST: ${connectionInstance.connection.host
             }`)
 
