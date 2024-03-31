@@ -8,7 +8,7 @@ import {
 const router = Router()
 
 router.route("/getallusers").get(getallusers);
-router.route("/:userid").get(getUserById);
+router.route("/:id").get(getUserById);
 router.route("/addusers").post(addUser);
 
 
